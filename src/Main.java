@@ -8,18 +8,21 @@ public class Main {
         System.out.println("Welcome to the sliding puzzle game!!!");
 
         System.out.println("Choose the length and breadth of the sliding puzzle board.");
-        System.out.println("Length: ");
+        System.out.print("Length: ");
         int length = scanner.nextInt();
 
-        System.out.println("Breadth: ");
+        System.out.print("Breadth: ");
         int breadth = scanner.nextInt();
 
         PuzzleBoard board = new PuzzleBoard(length, breadth);
         board.shuffleGrid();
 
         char slideDirection;
+        char playerContinue;
 
-        while (true) {
+        boolean shouldQuit = false;
+
+        while (!shouldQuit) {
             System.out.println("\nChoose a move!");
             System.out.println("U -> Slide up");
             System.out.println("D -> Slide down");
@@ -38,7 +41,13 @@ public class Main {
 
             if(board.isComplete()) {
                 System.out.println("Congrats!! You solved the sliding puzzle!\n");
-                break;
+                System.out.println("Do you want to restart? (Y or any key/N): ");
+                playerContinue = scanner.next().charAt(0);
+
+                if (playerContinue == 'N' || playerContinue == 'n')
+                    shouldQuit = true;
+                else
+                    board.shuffleGrid();
             }
         }
     }
