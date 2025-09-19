@@ -1,12 +1,12 @@
 import java.util.Random;
 
 public class PuzzleBoard {
-    int length;
-    int breadth;
+    private int length;
+    private int breadth;
 
-    int[] emptyPiecePosition = new int[2];
+    private int[] emptyPiecePosition = new int[2];
 
-    int[][] board;
+    private int[][] board;
 
     public PuzzleBoard(int length, int breadth) {
         this.length = length;
