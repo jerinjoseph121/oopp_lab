@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package common;
 
 import common.gameUtils.Score;
@@ -44,3 +45,51 @@ public abstract class Game {
     public abstract void reset();
     public abstract String state();
 }
+=======
+package common;
+
+import common.gameUtils.Score;
+import dotsAndBoxes.DotsAndBoxes;
+import slidePuzzle.SlidePuzzle;
+
+import java.util.Scanner;
+
+public abstract class Game {
+
+    /** Game Interactive Menu */
+    public static void launchGame() {
+        Score score = new Score();
+
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            System.out.println("\n=== CS611 Game Hub ===");
+            System.out.println("1) Slide Puzzle");
+            System.out.println("2) Dots and Boxes");
+            System.out.println("3) View Scores");
+            System.out.println("0) Exit");
+            System.out.print("Select: ");
+
+            String opt = sc.nextLine().trim();
+            switch (opt) {
+                case "1":
+                    SlidePuzzle.launchSlidePuzzle(sc, score);
+                    break;
+                case "2":
+                    DotsAndBoxes.launchDotsAndBoxes(sc, score);
+                    break;
+                case "3":
+                    score.showScores();
+                    break;
+                case "0":
+                    System.out.println("Goodbye!");
+                    return;
+                default: System.out.println("Invalid choice.");
+            }
+        }
+    }
+
+    public abstract void start();
+    public abstract void reset();
+    public abstract String state();
+}
+>>>>>>> d35a6f105c88dd6b403c2c1218c7bb2cf1d75e23

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Maya and Devi        Dots and Boxes       48sec        Maya
 Dan and Ran          Dots and Boxes       12sec        Ran            
 Dan and Ran          Dots and Boxes       2sec         Tie            
@@ -10,3 +11,17 @@ Jerin and Minxing    Dots and Boxes       20sec        Minxing
 Jerin                Slide Puzzle         16sec        Jerin                  
 Jerin                Slide Puzzle         27sec        Jerin          
 Jerin and James      Dots and Boxes       1min 14sec   James          
+=======
+Maya and Devi        Dots and Boxes       48sec        Maya
+Dan and Ran          Dots and Boxes       12sec        Ran            
+Dan and Ran          Dots and Boxes       2sec         Tie            
+g and 3e             Dots and Boxes       27sec        3e             
+Jerin                Slide Puzzle         12sec        Jerin          
+Jibin and Hector     Dots and Boxes       12sec        Hector         
+Jerin                Slide Puzzle         3sec         Jerin          
+fe and fe            Dots and Boxes       4sec         Tie            
+Jerin and Minxing    Dots and Boxes       20sec        Minxing        
+Jerin                Slide Puzzle         16sec        Jerin                  
+Jerin                Slide Puzzle         27sec        Jerin          
+Jerin and James      Dots and Boxes       1min 14sec   James          
+>>>>>>> d35a6f105c88dd6b403c2c1218c7bb2cf1d75e23
